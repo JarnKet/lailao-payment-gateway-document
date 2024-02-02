@@ -1,0 +1,10 @@
+{
+  "index": "Introduction",
+  "frameworks": "ການນຳໃຊ້ຮ່ວມກັບ Framework",
+  "portal": {
+    "title": "Web Portal ↗",
+    "type": "page",
+    "href": "https://portal.lailaolab.la/",
+    "newWindow": true
+  }
+}

@@ -1,0 +1,202 @@
+# ReactJS
+
+{/* ![reactjs](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png) */}
+
+<div className="flexCenter">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" width="200" height="200" />
+</div>
+
+React ເປັນ Libery ຂອງພາສາ JavaScript ທີ່ເຂົ້າມາຊ່ວຍໃນການພັດທະນາເວັບໄຊທ໌ໄດ້ງ່າຍຂຶ້ນ. ຕົວ React ມັນຍັງໄດ້ຊ່ວຍໃຫ້ການສ້າງສິ່ງຕ່າງໆທີ່ຊ້ຳກັນ ເປັນອັນດຽວແລ້ວໃຊ້ໄດ້ຫຼາຍໆຄັ້ງເອີ້ນວ່າ component. ເຮັດໃຫ້ຕົວ Source Code ຂອງເຮົາມີລະບຽບ ແລະ ສາມາດບຳລຸງຮັກສາໄດ້ໃນໄລຍະຍາວ.
+
+## ການເຊື່ອມຕໍ່ Payment Gateway ດ້ວຍ ReactJS
+
+ທ່ານສາມາດນຳໃຊ້ ReactJs ໃນການເຊື່ອມຕໍ່ກັບ Lailao Payment Gateway ຂອງພວກເຮົາ ກ່ອນອື່ນຫມົດແມ່ນເຮົາຕ້ອງສ້າງໂຄງການ Reactjs ໂຄງການນີ້ເຮົາຈະມາສ້າງລະບົບ e-Commerce ໂດຍສະເພາະແມ່ນຫນ້າລາຍລະອຽດສິນຄ້າ ທີ່ຈະສະແດງຮູບພາບ, ລາຍລະອຽດ, ລາຄາ, ປະເພດ ແລະ ອື່ນໆ. ນອກຈາກນີ້ຍັງມີການຈັດຊື້ທີ່ຈະສົ່ງຄຳສັ່ງໄປສ້າງ QR Payment ທີ່ທະນາຄານການຄ້າ ແລະ ສາມາດມີຂໍ້ນຳໃຊ້ແອັບທະນາຄານການຄ້າ (BCEL One) ໃນການສະແກນເພື່ອຊຳລະ. ຫລັງຈາກນັ້ນ, ທາງລະບົບຈະໄດ້ຮັບ Callback ຈາກທະນາຄານທີ່ເປັນລາຍລະອຽດຂອງການຊຳລະນັ້ນໆ ແລະ ເຮົາຈະສະແດງຂໍ້ຄວາມຢືນຢັນການຊຳລະດັ່ງກ່າວ. Source Code ທັງຫມົດສາມາດນຳໃຊ້ໄດ້ຢູ່ທີ່ລິ້ງນີ້ [Github](https://github.com/tovannapha2/lailaopayment-reactjs)
+
+ຖ້າຕ້ອງການອ່ານລາຍລະອຽດເພີ່ມຕື່ມກ່ຽວກັບ Lailao Payment Gateway ສາມາດເບິ່ງທີ່ນີ້ໄດ້ເລີຍ [Introduction](/)
+
+## ສ້າງ React App
+
+ສ້າງ React App ເປັນສະພາບແວດລ້ອມທີ່ສະດວກສະບາຍສໍາລັບການຮຽນຮູ້ React, ເຊິ່ງລາຍລະອຽດເພີ່ມຕື່ມສາມາດເບິ່ງໄດ້ທີ [ຄູ່ມືການນຳໃຊ້ React](https://react.dev/) ແລະເປັນວິທີທີ່ດີທີ່ສຸດເພື່ອເລີ່ມຕົ້ນການສ້າງຄໍາຮ້ອງສະຫມັກຫນ້າດຽວໃຫມ່ໃນ React.
+
+ມັນຕັ້ງຄ່າສະພາບແວດລ້ອມການພັດທະນາຂອງທ່ານເພື່ອໃຫ້ທ່ານສາມາດນໍາໃຊ້ຄຸນສົມບັດ JavaScript ຫລ້າສຸດ, ສະຫນອງປະສົບການນັກພັດທະນາທີ່ດີ, ແລະເພີ່ມປະສິດທິພາບແອັບຯຂອງທ່ານໃນການຜະລິດ. ທ່ານຈະຕ້ອງມີ Node >= 14.0.0 ແລະ npm >= 5.6 ໃນເຄື່ອງຂອງເຈົ້າ. ເພື່ອສ້າງໂຄງການ, ດໍາເນີນການ:
+
+```bash showLineNumbers copy
+npx create-react-app lailaopayment-reactjs
+cd lailaopayment-reactjs
+npm start
+```
+
+ເຮົາມາອະທິບາຍຄຳສັ່ງຂ້າງເທິງນຳກັນ
+
+ແຖວທີ1 ຄຳສັ່ງນີ້ຈະສ້າງໂປຣເຈັກ Reactjs ຫນຶ່ງຂຶ້ນມາໃຫ້ທີ່ມີຊື່ວ່າ tutorial-reactjs
+
+ແຖວທີ2 ແມ່ນເຄື່ອນຍ້າຍເຂົ້າໄປຫາໂຟລເດີ tutorial-reactjs
+
+ແຖວທີ3 ຄຳສັ່ງເພື່ອແລ່ນລະບົບ Debug ໂປເຈັກທຳອິດ ຫລັງຈາກນັ້ນເຮົາສາມາດເຂົ້າໄປທີ່ browser ທີ່ url: http://localhost:3000/
+
+ຕໍ້ໄປເຮົາສາມາດເພີ່ມ Library ຕ່າງໆເຊັ່ນ icon, ການສະແດງຮູບພາບ, ການໃຫ້ດາວ ແລະ tailwind ເພື່ອຊ່ວຍໃນການອອກແບບຫນ້າຕາຂອງເຮົາໃຫ້ສວຍງາມຂຶ້ນ ໂດຍພິມຄຳສັ່ງລຸ່ມນີ້:
+
+```bash showLineNumbers copy
+npm install react-icons react-image-gallery react-rater tailwindcss @headlessui/react  react-qrcode-logo
+```
+
+ຄຳສັ່ງຂໍາງເທິງແມ່ນການເພີ່ມ Library ຕ່າງໆລົງສູ່ໂປຣເຈັກເຊິ່ງແຕ່ລະອັນມີຄວາມຫມາຍຄືດັ່ງລຸ່ມນີ້:
+
+| Library             |                                                               ລາຍລະອຽດ                                                                |
+| :------------------ | :-----------------------------------------------------------------------------------------------------------------------------------: |
+| react-icons         |                                        ໄລບລາລີທີ່ສະຫນອງໄອຄອນຕ່າງໆເພື່ອມານຳໃຊ້ໃນໂຄງການ Reactjs                                         |
+| react-image-gallery |                       ໄລບລາລີທີ່ສະແດງຮູບພາບ React ແມ່ນອົງປະກອບຂອງ React ສໍາລັບການກໍ່ສ້າງຄັງຮູບພາບແລະ carousels                        |
+| react-rater         |                                     ໄລບລາລີທີ່ສະຫນອງການເລດຕິ້ງສິນຄ້າເພື່ອມານຳໃຊ້ໃນໂຄງການ Reactjs                                      |
+| tailwindcss         |                         ໄລບລາລີການສະຫນອງຕົວຊ່ວຍໃນການອອກແບບທີ່ສວຍງາມ, ອົງປະກອບ ແລະແມ່ແບບທີ່ອອກແບບມາຢ່າງຊ່ຽວຊານ                         |
+| @headlessui/react   | ໄລບລາລີທີ່ສະຫນອງຊຸດອົງປະກອບ UI ທີ່ບໍ່ມີຮູບແບບ, ເຂົ້າເຖິງໄດ້ຢ່າງເຕັມສ່ວນສໍາລັບ React, ອອກແບບມາເພື່ອປະສົມປະສານທີ່ສວຍງາມກັບ Tailwind CSS |
+| react-qrcode-logo   |                                  ໄລບລາລີທີ່ສະຫນອງການສະແດງ QR Code ໃນລະບົບພ້ອມທັງສະແດງຮູບພາບຢູ່ທາງກາງ                                  |
+
+ເພື່ອຈຳລອງຫນ້າຕາລາຍລະອຽດສິນຄ້າທ່ານສາມາດໃຊ້ source code ລຸ່ມນີ້ເພື່ອຈຳລອງຂຶ້ນມາ ເຮົາຈະໄດ້ຮູບພາບສິນຄ້າ ແລະ ລາຍລະອຽດສິນຄ້າສະແດງຕົວຢ່າງຕາມດ້ານຂວາ
+
+```jsx showLineNumbers copy
+    import './App.css';
+import { BiCollapse, BiShoppingBag } from "react-icons/bi";
+import ReactImageGallery from "react-image-gallery";
+import Rater from "react-rater";
+import "react-rater/lib/react-rater.css";
+import { Fragment, useEffect, useRef, useState } from 'react'
+import { Dialog, Transition } from '@headlessui/react'
+import axios from "axios";
+import { QRCode } from 'react-qrcode-logo';
+import { io } from 'socket.io-client';
+
+const App = () => {
+
+  const socket = io("https://payment-gateway.lailaolab.com", { transports: ['websocket'] });
+
+  const [open, setOpen] = useState(false)
+  const [openComplete, setOpenComplete] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [bcelData, setBcelData] = useState()
+  const [bcelCallbackData, setBcelCallbackData] = useState()
+  const cancelButtonRef = useRef(null)
+
+  useEffect(() => {
+    function onConnect() {
+      console.log("CONNECTED")
+    }
+
+    function onDisconnect() {
+      console.log("DISCONNECTED")
+    }
+
+    function onSubscribeBCELEvent(value) {
+      setOpen(false)
+      console.log(value)
+      setBcelCallbackData(value)
+      setTimeout(() => {
+        setOpenComplete(true)
+      }, 500)
+    }
+
+    socket.on('connect', onConnect);
+    socket.on('disconnect', onDisconnect);
+    socket.on(`join::$2b$10$Ek7DpQ3IZW70CGvzKDmvquZllTxwn3Hdxi/GL9lPzDxaNYHeSPdg.`, onSubscribeBCELEvent);
+
+    return () => {
+      socket.off('connect', onConnect);
+      socket.off('disconnect', onDisconnect);
+      socket.off(`join:$2b$10$Ek7DpQ3IZW70CGvzKDmvquZllTxwn3Hdxi/GL9lPzDxaNYHeSPdg.`, onSubscribeBCELEvent);
+    };
+  }, []);
+
+
+  const productDetailItem = {
+    images: [
+      {
+        original:
+          "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=600",
+        thumbnail:
+          "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=600",
+      },
+      {
+        original:
+          "https://ph.canon/media/image/2023/05/19/b89bed4e21e540f985dedebe80166def_EOS+R100+RF-S18-45mm+Front+Slant.png",
+        thumbnail:
+          "https://ph.canon/media/image/2023/05/19/b89bed4e21e540f985dedebe80166def_EOS+R100+RF-S18-45mm+Front+Slant.png",
+      },
+      {
+        original:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2_tsZUuInzUC7Zb6j47i-pSUsNK3Np10X3l62d15mDnFgWrmuv-M0SZ8zuEovF0CeGI&usqp=CAU",
+        thumbnail:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2_tsZUuInzUC7Zb6j47i-pSUsNK3Np10X3l62d15mDnFgWrmuv-M0SZ8zuEovF0CeGI&usqp=CAU",
+      },
+      {
+        original:
+          "https://s3-ap-southeast-1.amazonaws.com/media.cameralk.com/486/conversions/1561852319_1274706-thumb.jpg",
+        thumbnail:
+          "https://s3-ap-southeast-1.amazonaws.com/media.cameralk.com/486/conversions/1561852319_1274706-thumb.jpg",
+      },
+      {
+        original:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lVOONL9MpQzp34tnFcQcqBBT15fA-maaCg6xgNIOCPem-xxtSBKx6ISdd4jEfuCTid8&usqp=CAU",
+        thumbnail:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4lVOONL9MpQzp34tnFcQcqBBT15fA-maaCg6xgNIOCPem-xxtSBKx6ISdd4jEfuCTid8&usqp=CAU",
+      },
+    ],
+    title: "ກ້ອງຖ່າຍຮູບ ສາຍຂອງ",
+    reviews: "150",
+    availability: true,
+    brand: "ລາວສ້າງພາບ",
+    category: "ກ້ອງຖ່າຍຮູບ",
+    sku: "BE45VGTRK",
+    price: 450000,
+    previousPrice: 599000,
+    description:
+      "ຂໍອະນຸຍາດຜູ່ດູແລກຸ່ມ🙂 ຂາຍເລນກ້ອງຖ່າຍຮູບ ⏩   ເລນ Canon EF50mm f:1.4 STM ⏩   ໃຊ້ໄດ້ກັບກ້ອງ DSLR ທັງ FULL FRAME ແລະ APS-C  Filter Hoya Pro1 Digital mc uv(0)",
+    size: ["XS", "S", "M", "L", "XL"],
+    color: ["gray", "violet", "red"],
+  };
+  const plusMinuceButton =
+    "flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500";
+
+
+
+  const sendForRequestQr = async () => {
+    setIsLoading(true)
+    let data = {
+      'amount': '1',
+      'description': 'payment-gateway-test'
+    };
+
+    let config = {
+      method: 'post',
+      maxBodyLength: Infinity,
+      url: 'https://payment-gateway.lailaolab.com/v1/api/payment/generate-bcel-qr',
+      headers: {
+        'secretKey': '$2b$10$Ek7DpQ3IZW70CGvzKDmvquZllTxwn3Hdxi/GL9lPzDxaNYHeSPdg.',
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      data: data
+    };
+
+    axios.request(config)
+      .then((response) => {
+        console.log(JSON.stringify(response.data));
+        setBcelData(response.data)
+        setIsLoading(false)
+      })
+      .catch((error) => {
+        console.log(error);
+        setIsLoading(false)
+      });
+  }
+
+  return ()}
+
+```
+
+ຖ້າເຮົາອັບເດດ ແລະ ເຂົ້າໄປເບິ່ງໃນລະບົບສາມາດໄດ້ຜົນໄດ້ຮັບຄືດັ່ງຮູບລຸ່ມນີ້
+
+![preview](https://doc-payment.lailaolab.la/images/screen1.jpg)
+
+## ວິທີການທົດລອງນຳໃຊ້ລະບົບທົດລອງນີ້
+
+1. ກົດສົ່ງຊື້ແລ້ວລະບົບຈະສ້າງ QR ສຳລັບຈ່າຍເງິນຂຶ້ນມາ
+2. ນຳໃຊ້ແອັບທະນາຄານ BCEL One ຊຳລະQR ດັ່ງກ່າວ
+3. ຖ້າສຳເລັດແລ້ວຈະໄດ້ຮັບຂໍ້ມູນທີ່ສົ່ງມາຈາກທະນາຄານສະແດງຢູ່ຫນ້າຈໍ
