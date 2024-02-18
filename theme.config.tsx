@@ -16,7 +16,7 @@ const config: DocsThemeConfig = {
   head: () => {
     const { asPath, defaultLocale, locale } = useRouter();
     const { frontMatter } = useConfig();
-    const url = "https://my-app.com" + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+    const url = "https://https://lailao-payment-gateway-document.vercel.app/" + (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
 
     return (
       <>
@@ -76,12 +76,21 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: (
-      <a href="https://www.lailaolab.com/" target="_blank" style={{ display: "flex", alignItems: "flex-start", flexDirection: "column" }}>
-        <img width={150} src="https://cdn-images-1.medium.com/max/1200/1*QAv_cgwbLaSQJjHBhryt-Q.png" alt="lailaolab logo" />
-        {/* <span>Lailaolab ICT Solutions ., Ltd</span> */}
-      </a>
+      <div>
+        <a href="https://www.lailaolab.com/" target="_blank" style={{ display: "flex", alignItems: "flex-start", flexDirection: "column" }}>
+          <img width={150} src="https://cdn-images-1.medium.com/max/1200/1*QAv_cgwbLaSQJjHBhryt-Q.png" alt="lailaolab logo" />
+          {/* <span>Lailaolab ICT Solutions ., Ltd</span> */}
+        </a>
+        <small>
+          © Copyright 2023 | All Rights Reserved by <br />{" "}
+          <Link target="_blank" href={"https://www.lailaolab.com/"}>
+            Lailaolab ICT Solutions
+          </Link>
+        </small>
+      </div>
     ),
   },
+  gitTimestamp: false,
   // darkMode: false,
 };
 

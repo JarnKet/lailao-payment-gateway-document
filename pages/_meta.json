@@ -1,10 +1,43 @@
 {
-  "index": "Introduction",
-  "frameworks": "ການນຳໃຊ້ຮ່ວມກັບ Framework",
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "breadcrumb": false,
+      "footer": true,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false
+    }
+  },
   "portal": {
     "title": "Web Portal ↗",
     "type": "page",
     "href": "https://portal.lailaolab.la/",
     "newWindow": true
+  },
+  "version": {
+    "title": "Version",
+    "type": "menu",
+    "items": {
+      "v1": {
+        "title": "v1",
+        "href": "/v1"
+      },
+      "v2": {
+        "title": "v2",
+        "href": "/v2"
+      }
+    }
+  },
+  "v1": {
+    "title": "v1",
+    "type": "page",
+    "display": "hidden"
+  },
+  "v2": {
+    "title": "v2",
+    "type": "page",
+    "display": "hidden"
   }
 }

@@ -1,100 +1,52 @@
-# Introduction
+{/* # Heelo */}
+import Link from 'next/link'
 
-ຍິນດີຕ້ອນຮັບສູ່ Lailao Payment Gateway, ໃນສ່ວນນີ້ ທ່ານສາມາດຄົ້ນຫາຂໍ້ມູນທີ່ທ່ານຈໍາເປັນຕ້ອງຮູ້ເພື່ອສຶກສາ ແລະ ນຳເອົາໄປໃຊ້ຂອງບໍລິການພວກເຮົາ ຫຼື Lailao Payments API.
+<main className="relative  overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/examples/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:size-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/examples-dark/squared-bg-element.svg')]">
+  <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
+  <div class="flex justify-center">
+    <Link
+      class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400"
+      href="https://portal.lailaolab.la/"
+      target="_blank"
+    >
+      Lailao Payment Gateway
+      <span className="flex items-center gap-x-1">
+        <span className="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500">ເລີ່ມຕົ້ນນຳໃຊ້</span>
+        <svg
+          className="flex-shrink-0 size-4 text-blue-600"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </span>
+    </Link>
+  </div>
 
-Lailao Payment Gateway ຖືກສ້າງຂຶ້ນບົນພຶ້ນຖານຂໍ້ຫຍຸ້ງຍາກຂອງທາງ Start Up Platform ແລະ ລະບົບ Legacy ຕ່າງໆທີ່ຕ້ອງການຫັນປ່ຽນມາເຊື່ອມຕໍ້ກັບລະບົບທະນາຄານ ຫລື ລະບົບ Wallet ຕ່າງໆທີ່ມີໃນ ສປປລາວ ທັງບັນຫາການເລື່ອງນະໂຍບາຍ ແລະ ເທັກນິກຕ່າງໆເຮັດໃຫ້ມີຂໍ້ຈຳກັດທາງດ້ານການໃຫ້ບໍລິການຂອງ Platforms ຕ່າງໆ
+<h1 className="block font-bold text-gray-800 h-auto my-4 md:my-10 text-center leading-[200px] text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
+  ເວັບໄຊທ໌ເອກະສານນຳໃຊ້
+</h1>
+<h1 className="block font-bold text-gray-800 h-auto my-4 md:my-10 text-center leading-[200px] text-2xl md:text-5xl lg:text-6xl dark:text-gray-200">
+  Lailao Payment Gateway
+</h1>
 
-ພວກເຮົາ Lailao Payment Gateway ເລິຍພັດທະນາຕົວກາງຂຶ້ນມາເພື່ອທີ່ຈະອຳນວຍຄວາມສະດວກ ແລະ ພ້ອມທັງສະຫນັບສະຫນູນເທັກໂນໂລຊິໃນການເຊື່ອມຕໍ່ໃຫ້ກັບບັນດາເຈົ້າຂອງ Platforms ທີ່ຕ້ອງການຫັນເປັນ FinTech ໃຫ້ສາມາດເຊື່ອມຕໍ່ກັບບໍລິການຂອງທະນາຄານ ແລະ Wallet ໄດ້ຢ່າງງ່າຍດາຍ ແລະ ວ່ອງໄວຂຶ້ນ.
+    <div className="mt-5 max-w-3xl text-center mx-auto">
+      <p className="text-lg text-gray-600 dark:text-gray-400">Preline is a large open-source project, crafted with Tailwind CSS framework by Hmlstream.</p>
+    </div>
 
-ເຊິ່ງໃນຄູ່ມືນີ້ແມ່ນ ເອກະສານຄູ່ມືສຳຫຼັບນັກພັດທະນາ. ຖ້າທ່ານບໍ່ແມ່ນຜູ້ພັດທະນາ, ແຕ່ມີຄວາມສົນໃຈ້ທ່ານສາມາດເບິ່ງພາບລວມເນື້ອຫາຂອງບົດຄວາມ ແລະ ຮູບແບບຂອງພວກເຮົາທີ່ໃຫ້ບໍລິການດັ່ງລຸ່ມນີ້:
+    <div className="mt-8 gap-3 flex justify-center">
+      <Link target="_blank" className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800" href="">
+        ເລີ່ມຕົ້ນອ່ານ
+      </Link>
+    </div>
 
-![benefits](https://doc-payment.lailaolab.la/images/payment-gateway-benefit.png)
+  </div>
 
-## Lailao Payment Gateway ແມ່ນຫຍັງ?
-
-Lailao Payment Gateway ແມ່ນຕົວກາງຂອງການຊຳລະເງິນທີ່ໄດ້ຮັບການຮັບຮອງຈາກ PCI ທີ່ມີໜ້າ dashboard ໃນການຈັດການທີ່ງ່າຍຕໍ່ການໃຊ້ ແລະ ນຳໃຊ້ຮູບແບບ REST API ທີ່ມີຄວາມເຂົ້າໃຈງ່າຍທີ່ໃຊ້ຈຳນວນຫຼາຍໃນບັນດາການພັດທະນາ API.
-
-ພວກເຮົາໃຫ້ບູລະມະສິດແກ່ທ່ານໃນການເຮັດຂະບວນການຊຳລະເງິນຕາມທີ່ທ່ານຕ້ອງການ ໂດຍບໍ່ມີຄວາມສ່ຽງ ແລະ ໂດຍກົງໄປກົງມາ ທີ່ມີທັງຮູບແບບການທົດລອງ (Test Environment) ແລະ ຮູບແບບການນຳໃຊ້ຈິງ (Production Environment)
-
-## ເລີ່ມສ້າງບັນຊີນັກພັດທະນາ ຫລື ເຈົ້າຂອງແພັດຟອມກັບ Lailao Payment Gateway
-
-ເລີ່ມຕົ້ນໃນການລົງທະບຽນສໍາລັບບັນຊີທົດລອງ ເພື່ອເລີ່ມຕົ້ນການດໍາເນີນການຂອງທ່ານກ່ອນທີ່ຈະນຳໃຊ້ຈິງ (Production). ໃນທັງສອງຮູບແບບບໍ່ວ່າຈະເປັນ ຮູບແບບການທົດລອງ (Test Environment) ແລະ ຮູບແບບການນຳໃຊ້ຈິງ (Production Environment), ຈະມີໜ້າ dashboard ສະແດງຂໍ້ມູນການເຮັດທຸລະກຳ, ການຕັ້ງຄ່າບັນຊີ, ແລະ ລະຫັດຕົວຢ່າງ ເພື່ອເຂົ້າໃຊ້ໃນການທົດລອງ API ຂອງພວກເຮົາ, ເຊັ່ນ: ການສ້າງ ຫຼື ການຄືນເງິນຄ່າບໍລິການ.
-
-- [ການເຊື່ອມຕໍ່ໂດຍນຳໃຊ້ ReactJS](/frameworks/reactjs)
-
-## ສ້າງຕົວຢ່າງໃນການເຊື່ອມຕໍ່ກັບຮູບແບບການທົດລອງ (Test Environment)
-
-ເພື່ອດໍາເນີນການທົດສອບລະຫັດຕົວຢ່າງໃດໆຢູ່ໃນເວັບໄຊທ໌ນີ້, ທ່ານຄວນປ່ຽນລະຫັດຕົວຢ່າງທີ່ສະແດງ ($SECRET_KEY ຫຼື $PUBLIC_KEY) ດ້ວຍລະຫັດສະເພາະຂອງບັນຊີຂອງທ່ານທີ່ມີຢູ່ໃນໜ້າ dashboard ຂອງທ່ານ.
-
-## ວິທີການເຊື່ອມຕໍ່ກັບທະນາຄານການຄ້າ
-
-ວີທີນີ້ແມ່ນນຳໃຊ້ສະເພາະໃຫ້ທາງນັກພັດທະນາສາມາດເຊື່ອມຕໍ່ກັບ API ຂອງທະນາຄານການຄ້າໄດ້ຢ່າງງ່າຍດາຍ ໂດຍຂັ້ນຕອນທຳອິດແມ່ນຈະເປັນການສົ່ງຂໍ້ມູນເພື່ອໄປຂໍ QR String ຈາກທະນາຄານກ່ອນ ຫລັງຈາກນັ້ນສາມາດເຊື່ອມຕໍ່ Socket ເພື່ອລໍຖ້າຟັງຜົນການຊຳລະຈາກທະນາຄານໄດ້
-
-![processing](https://doc-payment.lailaolab.la/images/bcel-flow.png)
-
-## ວິທີການສ້າງ QR ກັບທະນາຄານການຄ້າ
-
-ການສ້າງ QR string ສຳລັບການຊຳລະແມ່ນສາມາດນຳໃຊ້ລິ້ງ ແລະ ວິທີດັ່ງລຸ່ມນີ້
-
-```bash showLineNumbers copy
-    curl --location 'https://payment-gateway.lailaolab.com/v1/api/payment/generate-bcel-qr?amount=$AMOUNT&description=$DESCRIPTION' \
-    --header 'secretKey: $SECRET_KEY' \
-    --header 'Content-Type: application/x-www-form-urlencoded' \
-    --data-urlencode 'amount=$AMOUNT' \
-    --data-urlencode 'description=$DESCRIPTION'
-```
-
-| Parameter   |                                                     ລາຍລະອຽດ                                                     |
-| :---------- | :--------------------------------------------------------------------------------------------------------------: |
-| secretKey   |                                   ຄ່າລະຫັດທີ່ໄດ້ຈາກບັນຊີໃນ Dashboard ຂອງລະບົບ                                    |
-| amount      |                                   ຈຳນວນເງິນທີ່ຕ້ອງການສ້າງຂຶ້ນເພື່ອໃຊ້ໃນການຊຳລະ                                   |
-| description | ລາຍລະອຽດການຊຳລະ ໝາຍເຫດ: ຄວນເປັນພາສາອັງກິດ ແລະ ບໍ່ຄວນມີຍະວ່າງໃນຂໍ້ຄວາມ ເນື່ອງຈາກລະບົບທະນາຄານອາດພິຈາລະນາບໍ່ຄົບຖ້ວນ |
-
-ໃນນີ້ຄ່າຕົວຢ່າງທີ່ຖືກສົ່ງກັບຄືນມາຈາກທະນາຄານ
-
-```json showLineNumbers copy
-{
-  "message": "SUCCESSFULLY",
-  "transactionId": "7d5d7420-e373-431d-b3c0-728a4f138985",
-  "code": "00020101021133550004BCEL0106ONEPAY0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXVTE6002LA625105367d5d7420-e373-431d-b3c0-728a4f1389850807okaybor63043561",
-  "link": "onepay://qr/00020101021133550004BCEL0106ONEPAY0216mcXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX5303418540115803VTE6002LA625105367d5d7420-e373-431d-b3c0-728a4f1389850807okaybor63043561"
-}
-```
-
-| Response Parameter |                          ລາຍລະອຽດ                           |
-| :----------------- | :---------------------------------------------------------: |
-| message            | ຂໍ້ຄວາມທີ່ສະແດງສະຖານະການສົ່ງສ້າງຊຸດຂໍ້ຄວາມໃນການສ້າງ QR Code |
-| transactionId      |                  ລະຫັດໄອດີທີ່ກຳກັບການຊຳລະ                   |
-| code               |                ຊຸດຂໍ້ຄວາມຂອງການສ້າງ QR Code                 |
-| link               |   ລິ້ງທີ່ສາມາດນຳໃຊ້ໃນການເປີດແອັບທະນາຄານການຄ້າເພື່ອການຊຳລະ   |
-
-## ວິທີການເຊື່ອມຕໍ່ກັບ Gateway ດ້ວຍ Socket
-
-ເພື່ອຮັບຂໍ້ມູນ trigger ຫລັງຈາກທີ່ End User ທຳການຊຳລະມາ ທາງ Platform ຂອງລູກຄ້າຕ້ອງມີການເຊື່ອມຕໍ່ Socket ໄປຫາ Gateway ເພື່ອ ເຮັດການ Subscribe ລໍຖ້າຮັບຟັງຄຳຕອບຈາກທະນາຄານຜ່ານ Gateway ຂອງເຮົາ. ການເຊື່ອມຕໍ່ກັບ Socket ເຮົາແມ່ນສາມາດເຊື່ອມຕໍ່ດ້ວຍວິທີການລຸ່ມນີ້
-
-```Socket copy
-    https://payment-gateway.lailaolab.com/
-```
-
-ຫລັງຈາກນັ້ນທາງລະບົບຕ້ອງ Listen ຫາ channel ທີ່ລຸ່ມນີ້
-
-```Socket copy
-    private_message:$USER_ID
-```
-
-ເຊິ່ງຕົວປ່ຽນທີ່ຈຳເປັນຕ້ອງມີຄືດັ່ງນີ້
-| Response Parameter | ລາຍລະອຽດ |
-| :----------------- | :---------------------------------------------------------: |
-| USER_ID | ລະຫັດໄອດີຂອງຜູ້ໃຊ້ທີ່ສາມາດໄດ້ຈາກ Dashboard |
-
-## ວິທີການຊຳລະເງິນວິທີການຊຳລະເງິນ
-
-ຫລັງຈາກທີ່ Platform ໄດ້ຮັບ qrstring ແລະ deeplink ຈາກ Lailao Payment Gateway ແລ້ວທາງ End User ສາມາດທຳການຊຳລະຜ່ານແອັບທະນາຄານການຄ້າ (BCEL ONE) ໄດ້ເລີຍ ຫລັງຈາກນັ້ນລະບົບ Platform ລູກຄ້າທີ່ເຊື່ອມຕໍ່ Socket ກັບ Gateway API ຂອງພວກເຮົາ
-
-## ກວດສອບເບິ່ງປະຫວັດການຊຳລະ
-
-ຫລັງຈາກສ້າງທຸລະກຳຂຶ້ນມາແລ້ວທ່ານສາມາດເຂົ້າກວດສອບປະຫວັດການສ້າງທຸລະກຳທີ່ຜ່ານມາ ພ້ອມທັງກວດສອບສະຖານະຂອງທຸລະກຳດັ່ງກ່າວ
-
-```bash copy
-   curl --location 'https://payment-gateway.lailaolab.com/v1/api/payment?user=$USER_ID'
-```
+</main>
